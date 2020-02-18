@@ -1,0 +1,227 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 5650 2000 1200 900 
+U 5FA3C203
+F0 "BlackMagicProbe" 50
+F1 "BlackMagicProbe.sch" 50
+F2 "BMP.SWDIO" I L 5650 2300 50 
+F3 "BMP.VTARG" I R 6850 2300 50 
+F4 "BMP.TDI" I L 5650 2750 50 
+F5 "BMP.TRACESWO" I L 5650 2600 50 
+F6 "BMP.SWCLK" I L 5650 2150 50 
+F7 "BMP.TXD" I R 6850 2750 50 
+F8 "BMP.RXD" I R 6850 2600 50 
+F9 "BMP.~RST" I R 6850 2450 50 
+$EndSheet
+$Sheet
+S 5650 3350 1200 900 
+U 603B9EF8
+F0 "OutputInterface" 50
+F1 "OutputInterface.sch" 50
+F2 "DUT.TX" I R 6850 4100 50 
+F3 "DUT.SWCLK" I L 5650 3500 50 
+F4 "DUT.SWDIO" I L 5650 3650 50 
+F5 "DUT.SWO" I L 5650 3950 50 
+F6 "DUT.AUX" I L 5650 4100 50 
+F7 "DUT.RX" I R 6850 3950 50 
+F8 "DUT.~RST" I R 6850 3800 50 
+F9 "DUT.V_FB" I R 6850 3650 50 
+F10 "DUT.V_SUPPLY" I R 6850 3500 50 
+$EndSheet
+$Sheet
+S 3250 2000 1200 900 
+U 5F9D2B45
+F0 "Power" 50
+F1 "Power.sch" 50
+$EndSheet
+Wire Wire Line
+	6850 2300 7000 2300
+Wire Wire Line
+	7000 2300 7000 3650
+Wire Wire Line
+	7000 3650 6850 3650
+Wire Wire Line
+	6850 2450 7150 2450
+Wire Wire Line
+	7150 2450 7150 3800
+Wire Wire Line
+	7150 3800 6850 3800
+Wire Wire Line
+	7300 3950 6850 3950
+Wire Wire Line
+	7450 4100 6850 4100
+Wire Wire Line
+	5650 2150 5500 2150
+Wire Wire Line
+	5500 2150 5500 3500
+Wire Wire Line
+	5500 3500 5650 3500
+Wire Wire Line
+	5650 2300 5350 2300
+Wire Wire Line
+	5350 2300 5350 3650
+Wire Wire Line
+	5350 3650 5650 3650
+Wire Wire Line
+	5650 2600 5200 2600
+Wire Wire Line
+	5200 2600 5200 3950
+Wire Wire Line
+	5200 3950 5650 3950
+Wire Wire Line
+	5650 2750 5050 2750
+Wire Wire Line
+	5050 2750 5050 4100
+Wire Wire Line
+	5050 4100 5650 4100
+Wire Wire Line
+	7450 2600 7450 4100
+Wire Wire Line
+	6850 2600 7450 2600
+Wire Wire Line
+	6850 2750 7300 2750
+Wire Wire Line
+	7300 2750 7300 3950
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 5ECCD3EC
+P 4150 3650
+AR Path="/603B9EF8/5ECCD3EC" Ref="H?"  Part="1" 
+AR Path="/5ECCD3EC" Ref="H4"  Part="1" 
+F 0 "H4" H 4100 3850 50  0000 L CNN
+F 1 "MountingHole_Pad" H 4250 3608 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 4150 3650 50  0001 C CNN
+F 3 "~" H 4150 3650 50  0001 C CNN
+F 4 "no part" H 4150 3650 50  0001 C CNN "DNP"
+	1    4150 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 5ECCD3F2
+P 3950 3650
+AR Path="/603B9EF8/5ECCD3F2" Ref="H?"  Part="1" 
+AR Path="/5ECCD3F2" Ref="H3"  Part="1" 
+F 0 "H3" H 3900 3850 50  0000 L CNN
+F 1 "MountingHole_Pad" H 4050 3608 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 3950 3650 50  0001 C CNN
+F 3 "~" H 3950 3650 50  0001 C CNN
+F 4 "no part" H 3950 3650 50  0001 C CNN "DNP"
+	1    3950 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 5ECCD3F8
+P 3750 3650
+AR Path="/603B9EF8/5ECCD3F8" Ref="H?"  Part="1" 
+AR Path="/5ECCD3F8" Ref="H2"  Part="1" 
+F 0 "H2" H 3700 3850 50  0000 L CNN
+F 1 "MountingHole_Pad" H 3850 3608 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 3750 3650 50  0001 C CNN
+F 3 "~" H 3750 3650 50  0001 C CNN
+F 4 "no part" H 3750 3650 50  0001 C CNN "DNP"
+	1    3750 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 5ECCD3FE
+P 3550 3650
+AR Path="/603B9EF8/5ECCD3FE" Ref="H?"  Part="1" 
+AR Path="/5ECCD3FE" Ref="H1"  Part="1" 
+F 0 "H1" H 3500 3850 50  0000 L CNN
+F 1 "MountingHole_Pad" H 3650 3608 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 3550 3650 50  0001 C CNN
+F 3 "~" H 3550 3650 50  0001 C CNN
+F 4 "no part" H 3550 3650 50  0001 C CNN "DNP"
+	1    3550 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5ECCD404
+P 3550 3850
+AR Path="/603B9EF8/5ECCD404" Ref="#PWR?"  Part="1" 
+AR Path="/5ECCD404" Ref="#PWR0210"  Part="1" 
+F 0 "#PWR0210" H 3550 3600 50  0001 C CNN
+F 1 "GND" H 3555 3677 50  0000 C CNN
+F 2 "" H 3550 3850 50  0001 C CNN
+F 3 "" H 3550 3850 50  0001 C CNN
+	1    3550 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5ECCD40A
+P 3750 3850
+AR Path="/603B9EF8/5ECCD40A" Ref="#PWR?"  Part="1" 
+AR Path="/5ECCD40A" Ref="#PWR0220"  Part="1" 
+F 0 "#PWR0220" H 3750 3600 50  0001 C CNN
+F 1 "GND" H 3755 3677 50  0000 C CNN
+F 2 "" H 3750 3850 50  0001 C CNN
+F 3 "" H 3750 3850 50  0001 C CNN
+	1    3750 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5ECCD410
+P 3950 3850
+AR Path="/603B9EF8/5ECCD410" Ref="#PWR?"  Part="1" 
+AR Path="/5ECCD410" Ref="#PWR0221"  Part="1" 
+F 0 "#PWR0221" H 3950 3600 50  0001 C CNN
+F 1 "GND" H 3955 3677 50  0000 C CNN
+F 2 "" H 3950 3850 50  0001 C CNN
+F 3 "" H 3950 3850 50  0001 C CNN
+	1    3950 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5ECCD416
+P 4150 3850
+AR Path="/603B9EF8/5ECCD416" Ref="#PWR?"  Part="1" 
+AR Path="/5ECCD416" Ref="#PWR0222"  Part="1" 
+F 0 "#PWR0222" H 4150 3600 50  0001 C CNN
+F 1 "GND" H 4155 3677 50  0000 C CNN
+F 2 "" H 4150 3850 50  0001 C CNN
+F 3 "" H 4150 3850 50  0001 C CNN
+	1    4150 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 3850 3550 3750
+Wire Wire Line
+	3750 3750 3750 3850
+Wire Wire Line
+	3950 3750 3950 3850
+Wire Wire Line
+	4150 3750 4150 3850
+$Comp
+L sft:Logo #LOGO?1
+U 1 1 5E23302B
+P 5050 2050
+F 0 "#LOGO?1" H 5050 2265 50  0000 C CNN
+F 1 "Logo" H 5050 2174 50  0000 C CNN
+F 2 "sft:LOGO" H 5050 2050 50  0001 C CNN
+F 3 "" H 5050 2050 50  0001 C CNN
+F 4 "1" H 5050 2173 50  0001 C CNN "DNP"
+	1    5050 2050
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

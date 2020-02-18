@@ -1,0 +1,56 @@
+#!/usr/bin/env python3
+import math
+
+# e24 series
+series = [10, 11, 12, 13, 15, 16, 18, 20, 22, 24, 27, 30, 33, 36, 39, 43, 47, 51, 56, 62, 62, 68, 75, 82, 91]
+
+# directly available resistor values
+r1 = []
+for i in [1, 10, 100, 1000, 10000, 100000]:
+    for r in series:
+        r1.append(r * i)
+
+# values available by combining two resistors
+r2 = []
+for x in r1:
+    for y in r1:
+        r2.append(x + y)
+        r2.append(1/(1/x + 1/y))
+r2 = sorted(set(r2))
+
+# values available by combining three resistors
+r3 = []
+for x in r1:
+    for y in r2:
+        r3.append(x + y)
+        r3.append(1/(1/x + 1/y))
+r3 = sorted(set(r3))
+
+costmap = {}
+for r in r3:
+    costmap[float(r)] = 3
+for r in r2:
+    costmap[float(r)] = 2
+for r in r1:
+    costmap[float(r)] = 1
+
+# target resistor values that we want to find
+targets = [20 - 0, 50 - 20, 250 - 50, 1500 - 250, 1800 - 1500, 2250 - 1800, 2750 - 2250, 3300 - 2750]
+print(f"targets ratios: {targets}")
+
+for choice in series:
+    required = [choice * target / targets[0] for target in targets]
+    costs = [costmap.get(r, math.inf) for r in required]
+    if sum(costs) < len(costs) + 1:
+        col = "32;1"
+    elif sum(costs) < len(costs) + 2:
+        col = "32"
+    elif sum(costs) < len(costs) + 3:
+        col = "33"
+    else:
+        col = ""
+        continue
+
+    print(f"options: {required} - cost: {costs} -> \x1b[{col}m{sum(costs)}\x1b[m")
+
+# values available by combining three resistors
